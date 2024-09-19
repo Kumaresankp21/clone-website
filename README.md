@@ -1,9 +1,23 @@
---mirror: This option enables mirroring of the website. It’s essentially a shortcut for several other options that ensure the site is downloaded in a way that preserves its structure and makes it suitable for offline viewing.
 
---convert-links: After downloading, this option converts the links in the HTML files so that they point to the local copies of the files rather than the original online versions. This ensures that you can navigate the site offline without running into broken links.
+1. **`--mirror`**: 
+   - Enables mirroring of the website.
+   - Acts as a shortcut for multiple options to preserve site structure for offline viewing.
 
---adjust-extension: This option adds the appropriate file extensions (like .html) to files based on their content type. This helps in ensuring that files are saved in a way that makes them easily recognizable and usable offline.
+2. **`--convert-links`**: 
+   - Converts links in the HTML files after downloading.
+   - Ensures links point to local copies, allowing for offline navigation without broken links.
 
---page-requisites: This tells wget to download all the necessary elements (like images, stylesheets, and scripts) required to properly display the pages. This ensures that the downloaded pages look as they would online.
+3. **`--adjust-extension`**: 
+   - Adds appropriate file extensions (like `.html`) based on content type.
+   - Helps in saving files in a recognizable and usable format offline.
 
---no-parent: This prevents wget from downloading files from parent directories. It restricts the download to the specified URL and its subdirectories, ensuring you only get the content you want.
+4. **`--page-requisites`**: 
+   - Downloads all necessary elements (images, stylesheets, scripts) needed to display pages correctly.
+   - Ensures that downloaded pages look the same as they do online.
+
+5. **`--no-parent`**: 
+   - Prevents downloading files from parent directories.
+   - Restricts the download to the specified URL and its subdirectories, ensuring only the desired content is retrieved.
+
+### Summary
+This command is effective for creating a local copy of a website while maintaining its structure and functionality for offline access.
